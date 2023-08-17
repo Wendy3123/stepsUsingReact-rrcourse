@@ -7,6 +7,15 @@ const messages = [
 ];
 
 export default function App() {
+  return (
+    <>
+      <Steps />
+      <Steps />
+    </>
+  );
+}
+
+function Steps() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -19,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div>
       <button className="close" onClick={() => setIsOpen(!isOpen)}>
         {" "}
         {/* we are setting setIsOpen to opposite of whatever isopen is. if it is true we set it to false if it is false then we set to true */}
@@ -54,6 +63,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }

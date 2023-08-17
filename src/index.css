@@ -1,4 +1,4 @@
-/* 
+s/* 
 const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
@@ -84,7 +84,7 @@ h3 {
 }
 
 .close {
-  position: absolute;
+  /* position: absolute;       when we make multiple </steps> in our app this absolute will make the button look like one so if we get rid of it then it will show to x close buttons for each */
   top: 16px;
   right: 16px;
   border: none;
